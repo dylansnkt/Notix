@@ -1,96 +1,35 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Notix - Noticias Minimalistas</title>
-  <link rel="stylesheet" href="styles.css">
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #ffffff;
-      color: #333;
-      text-align: center;
-      margin: 0;
-      padding: 0;
-    }
-    header {
-      padding: 20px 0;
-      font-size: 24px;
-      font-weight: bold;
-    }
-    .container {
-      max-width: 600px;
-      margin: 40px auto;
-      padding: 20px;
-    }
-    .button {
-      display: inline-block;
-      padding: 10px 20px;
-      background-color: #007BFF;
-      color: white;
-      text-decoration: none;
-      border-radius: 25px;
-      font-size: 16px;
-      margin-top: 20px;
-    }
-    .newsletter form {
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-      align-items: center;
-    }
-    .newsletter input {
-      width: 80%;
-      padding: 10px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      font-size: 16px;
-    }
-    .newsletter button {
-      padding: 10px 20px;
-      background-color: #007BFF;
-      color: white;
-      border: none;
-      border-radius: 25px;
-      cursor: pointer;
-      font-size: 16px;
-    }
-    footer {
-      margin-top: 40px;
-      font-size: 14px;
-      color: #777;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noticias al Día</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <!-- Header -->
-  <header>Notix</header>
+    <header>
+        <img src="C:/Users/Dylan/NotixApp/web/imagenes/logo.png" alt="Notix Logo">
+        <h1>Noticias al Día</h1>
+    </header>
+    
+    <div class="container">
+        <h2>Descubre lo último</h2>
+        <p>Tendencias y noticias en un solo lugar.</p>
+        <a href="#" class="button">Ver noticias</a>
+    </div>
 
-  <!-- Contenido principal -->
-  <section class="container">
-    <h2>Noticias en audio e imágenes</h2>
-    <p>Información rápida y precisa, sin distracciones.</p>
-    <a href="#" class="button">Explorar</a>
-  </section>
-
-  <!-- Formulario de suscripción -->
-  <section class="newsletter container">
-    <h2>Suscríbete</h2>
-    <form id="subscribe-form">
-      <input type="text" id="name" placeholder="Nombre" required>
-      <input type="number" id="age" placeholder="Edad" required>
-      <input type="email" id="email" placeholder="Correo" required>
-      <button type="submit">Suscribirse</button>
-    </form>
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    <p>Contacto: <a href="mailto:info@notix.com">info@notix.com</a></p>
-    <p>&copy; 2025 Notix</p>
-  </footer>
-
-  <script src="script.js"></script>
+    <div class="newsletter">
+        <h2>Suscríbete</h2>
+        <form>
+            <input type="text" placeholder="Nombre" required>
+            <input type="number" placeholder="Edad" required>
+            <input type="email" placeholder="Correo" required>
+            <button type="submit">Suscribirme</button>
+        </form>
+    </div>
+    
+    <footer>
+        <p>&copy; 2025 Noticias al Día. <a href="#">Privacidad</a></p>
+    </footer>
 </body>
 </html>

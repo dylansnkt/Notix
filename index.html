@@ -22,30 +22,16 @@
         <form id="subscribe-form">
             <input type="text" id="nombre" placeholder="Nombre" required>
             <input type="number" id="edad" placeholder="Edad" required>
-            <input type="email" id="correo" placeholder="Correo" required>
+            <input type="email" id="email" placeholder="Correo" required>
             <button type="submit">Suscribirme</button>
         </form>
+        <p id="message"></p> <!-- Aquí aparecerá el mensaje de confirmación -->
     </div>
     
     <footer>
         <p>&copy; 2025 Notix. <a href="#">Privacidad</a></p>
     </footer>
 
-    <script>
-        document.getElementById("subscribe-form").addEventListener("submit", function(event) {
-            event.preventDefault();
-            var data = {
-                nombre: document.getElementById("nombre").value,
-                edad: document.getElementById("edad").value,
-                email: document.getElementById("correo").value
-            };
-            fetch("https://script.google.com/macros/s/AKfycbzUozks9eevwuluOFtW4oLBTQi2PFI7HsCnHzhGgyxRi1zc2MUjj7S7nP2_DUTGz4sJ3Q/exec", {
-                method: "POST",
-                mode: "no-cors",
-                headers: { "Content-Type": "application/json" },
-                body: JSON.stringify(data)
-            }).then(() => alert("¡Estas dentro del equipo!"));
-        });
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>

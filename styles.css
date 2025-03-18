@@ -1,7 +1,7 @@
 /* Estilos generales */
 body {
   font-family: Arial, sans-serif;
-  background-color: #ffffff;
+  background: linear-gradient(to bottom, #f4f4f4, #ffffff);
   color: #333;
   text-align: center;
   margin: 0;
@@ -12,28 +12,41 @@ header {
   padding: 20px 0;
   font-size: 28px;
   font-weight: bold;
+  background: linear-gradient(to right, #007BFF, #00C6FF);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header img {
+  height: 40px;
+  margin-right: 10px;
 }
 
 .container {
   max-width: 600px;
   margin: 40px auto;
   padding: 20px;
+  background: linear-gradient(to bottom, #ffffff, #e3f2fd);
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .button {
   display: inline-block;
   padding: 12px 24px;
-  background-color: #007BFF;
+  background: linear-gradient(to right, #007BFF, #00C6FF);
   color: white;
   text-decoration: none;
   border-radius: 25px;
   font-size: 18px;
   margin-top: 20px;
-  transition: background 0.3s;
+  transition: transform 0.2s ease-in-out;
 }
 
 .button:hover {
-  background-color: #0056b3;
+  transform: scale(1.05);
 }
 
 /* Formulario de suscripción */
@@ -54,17 +67,17 @@ header {
 
 .newsletter button {
   padding: 12px 24px;
-  background-color: #007BFF;
+  background: linear-gradient(to right, #ff416c, #ff4b2b);
   color: white;
   border: none;
   border-radius: 25px;
   cursor: pointer;
   font-size: 18px;
-  transition: background 0.3s;
+  transition: transform 0.2s ease-in-out;
 }
 
 .newsletter button:hover {
-  background-color: #0056b3;
+  transform: scale(1.05);
 }
 
 footer {

@@ -3,25 +3,79 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Notix - Newsletter</title>
+  <title>Notix - Noticias Minimalistas</title>
   <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #ffffff;
+      color: #333;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      padding: 20px 0;
+      font-size: 24px;
+      font-weight: bold;
+    }
+    .container {
+      max-width: 600px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+    .button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #007BFF;
+      color: white;
+      text-decoration: none;
+      border-radius: 25px;
+      font-size: 16px;
+      margin-top: 20px;
+    }
+    .newsletter form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      align-items: center;
+    }
+    .newsletter input {
+      width: 80%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+    .newsletter button {
+      padding: 10px 20px;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    footer {
+      margin-top: 40px;
+      font-size: 14px;
+      color: #777;
+    }
+  </style>
 </head>
 <body>
   <!-- Header -->
-  <header>
-    <h1>Notix</h1>
-    <p>Noticias en audio e imágenes, siempre contigo.</p>
-  </header>
+  <header>Notix</header>
 
   <!-- Contenido principal -->
   <section class="container">
-    <h2>Lo último en noticias</h2>
-    <p>Información rápida y precisa.</p>
+    <h2>Noticias en audio e imágenes</h2>
+    <p>Información rápida y precisa, sin distracciones.</p>
     <a href="#" class="button">Explorar</a>
   </section>
 
   <!-- Formulario de suscripción -->
-  <section class="newsletter">
+  <section class="newsletter container">
     <h2>Suscríbete</h2>
     <form id="subscribe-form">
       <input type="text" id="name" placeholder="Nombre" required>
@@ -29,17 +83,12 @@
       <input type="email" id="email" placeholder="Correo" required>
       <button type="submit">Suscribirse</button>
     </form>
-    <p id="message"></p>
   </section>
 
   <!-- Footer -->
   <footer>
     <p>Contacto: <a href="mailto:info@notix.com">info@notix.com</a></p>
-    <p>Síguenos en:
-      <a href="#">Twitter</a> |
-      <a href="#">Facebook</a> |
-      <a href="#">Instagram</a>
-    </p>
+    <p>&copy; 2025 Notix</p>
   </footer>
 
   <script src="script.js"></script>

@@ -3,13 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>notix</title>
+    <title>Notix</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <img src="C:/Users/Dylan/NotixApp/web/imagenes/logo.png" alt="Logo">
-        <h1>Notix</h1>
+        <img src="imagenes/logo.png" alt="Notix Logo">
     </header>
     
     <div class="container">
@@ -20,17 +19,33 @@
 
     <div class="newsletter">
         <h2>Suscríbete</h2>
-        <form>
-            <input type="text" placeholder="Nombre" required>
-            <input type="number" placeholder="Edad" required>
-            <input type="email" placeholder="Correo" required>
+        <form id="subscribe-form">
+            <input type="text" id="nombre" placeholder="Nombre" required>
+            <input type="number" id="edad" placeholder="Edad" required>
+            <input type="email" id="correo" placeholder="Correo" required>
             <button type="submit">Suscribirme</button>
         </form>
     </div>
     
     <footer>
-        <p>&copy; 2025 Notix <a href="#">Privacidad</a></p>
+        <p>&copy; 2025 Notix. <a href="#">Privacidad</a></p>
     </footer>
+
+    <script>
+        document.getElementById("subscribe-form").addEventListener("submit", function(event) {
+            event.preventDefault();
+            var data = {
+                nombre: document.getElementById("nombre").value,
+                edad: document.getElementById("edad").value,
+                email: document.getElementById("correo").value
+            };
+            fetch("https://script.google.com/macros/s/AKfycbzUozks9eevwuluOFtW4oLBTQi2PFI7HsCnHzhGgyxRi1zc2MUjj7S7nP2_DUTGz4sJ3Q/exec", {
+                method: "POST",
+                mode: "no-cors",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify(data)
+            }).then(() => alert("¡Gracias por suscribirte!"));
+        });
+    </script>
 </body>
 </html>
-
